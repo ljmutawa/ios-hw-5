@@ -20,35 +20,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="MarioPartyBG" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-4q-ki8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="MarioPartyBG" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-4q-ki8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pu0-wM-2XI">
-                                <rect key="frame" x="132" y="526" width="167" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pu0-wM-2XI">
+                                <rect key="frame" x="84" y="379" width="245" height="257"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys3-GH-bY0">
+                                <rect key="frame" x="145" y="776" width="122" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="اضغط السهم">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kt-mw-cDl"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W0-9c-pl5">
-                                <rect key="frame" x="349" y="851" width="50" height="37"/>
+                                <rect key="frame" x="297" y="771" width="97" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="next"/>
                                 <connections>
                                     <segue destination="moA-X3-dsJ" kind="presentation" id="a6M-zL-SdF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys3-GH-bY0">
-                                <rect key="frame" x="159" y="810" width="115" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="اضغط      السهم">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="randomPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kt-mw-cDl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pu0-wM-2XI" secondAttribute="trailing" constant="85" id="13L-sz-z6i"/>
+                            <constraint firstItem="ddH-4q-ki8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5eg-4i-pA5"/>
+                            <constraint firstAttribute="bottom" secondItem="ddH-4q-ki8" secondAttribute="bottom" id="9WU-XS-p0H"/>
+                            <constraint firstItem="ddH-4q-ki8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Af4-1I-vER"/>
+                            <constraint firstItem="ddH-4q-ki8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ESG-gH-0IV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ys3-GH-bY0" secondAttribute="bottom" constant="44" id="Jfb-YC-0Mk"/>
+                            <constraint firstItem="ddH-4q-ki8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cdr-cr-fNH"/>
+                            <constraint firstItem="ddH-4q-ki8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f8k-RG-uel"/>
+                            <constraint firstItem="Ys3-GH-bY0" firstAttribute="top" secondItem="pu0-wM-2XI" secondAttribute="bottom" constant="140" id="gr5-pd-Ac9"/>
+                            <constraint firstItem="ddH-4q-ki8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h55-Dt-43m"/>
+                            <constraint firstAttribute="bottom" secondItem="ddH-4q-ki8" secondAttribute="bottom" id="iph-fG-Dqn"/>
+                            <constraint firstItem="pu0-wM-2XI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="335" id="jpa-Ud-bzK"/>
+                            <constraint firstItem="Ys3-GH-bY0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="sgu-bb-CAm"/>
+                            <constraint firstItem="pu0-wM-2XI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="wYP-ZK-Wku"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -67,9 +81,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MarioBG" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-bF-p2C">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarioBG" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-bF-p2C">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jzQ-AF-OFT">
                                 <rect key="frame" x="90" y="147" width="235" height="415"/>
@@ -104,6 +117,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mbv-bF-p2C" firstAttribute="trailing" secondItem="B8z-nN-jML" secondAttribute="trailing" id="7Vw-e0-gMK"/>
+                            <constraint firstItem="mbv-bF-p2C" firstAttribute="top" secondItem="B8z-nN-jML" secondAttribute="top" id="ZmH-sE-6i2"/>
+                            <constraint firstItem="mbv-bF-p2C" firstAttribute="leading" secondItem="B8z-nN-jML" secondAttribute="leading" id="dM4-vn-bfT"/>
+                            <constraint firstAttribute="bottom" secondItem="mbv-bF-p2C" secondAttribute="bottom" id="joh-lT-efu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B8z-nN-jML"/>
                     </view>
                     <connections>
@@ -115,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkX-3e-R6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="138"/>
+            <point key="canvasLocation" x="882.60869565217399" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
